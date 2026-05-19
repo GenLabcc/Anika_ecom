@@ -1,0 +1,301 @@
+/* ================================================================
+   AllCustomers.css  –  matches the screenshot design exactly
+   ================================================================ */
+
+.ac {
+  padding: 28px 32px;
+  background: #f5f5f5;
+  min-height: 100%;
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+/* ── Header ─────────────────────────────────────────────────────── */
+.ac__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.ac__title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111;
+  margin: 0 0 2px;
+}
+
+.ac__subtitle {
+  font-size: 13px;
+  color: #888;
+}
+
+.ac__header-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.ac__link-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  color: #555;
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.15s;
+}
+.ac__link-btn:hover { color: #111; }
+
+/* ── Stat Cards ─────────────────────────────────────────────────── */
+.ac__stats-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.ac__stat-card {
+  flex: 1;
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px 20px;
+  border: 1px solid #eee;
+}
+
+.ac__stat-label {
+  font-size: 12.5px;
+  color: #888;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.ac__stat-value {
+  font-size: 26px;
+  font-weight: 700;
+  color: #111;
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+
+.ac__stat-sub {
+  font-size: 12px;
+  color: #aaa;
+}
+
+/* ── Toolbar ────────────────────────────────────────────────────── */
+.ac__toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  gap: 12px;
+}
+
+.ac__filters {
+  display: flex;
+  gap: 10px;
+}
+
+.ac__select-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.ac__select {
+  appearance: none;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 7px 30px 7px 12px;
+  font-size: 13px;
+  color: #333;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.15s;
+}
+.ac__select:focus { border-color: #aaa; }
+
+.ac__select-wrapper svg {
+  position: absolute;
+  right: 10px;
+  pointer-events: none;
+  color: #888;
+}
+
+/* ── Search ─────────────────────────────────────────────────────── */
+.ac__search-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 7px 14px;
+  width: 300px;
+}
+
+.ac__search-input {
+  border: none;
+  outline: none;
+  font-size: 13px;
+  color: #333;
+  flex: 1;
+  background: transparent;
+}
+.ac__search-input::placeholder { color: #bbb; }
+
+/* ── Table ──────────────────────────────────────────────────────── */
+.ac__table-wrapper {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.ac__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ac__th {
+  padding: 13px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+  text-align: left;
+  background: #fff;
+  border-bottom: 1px solid #f0f0f0;
+  white-space: nowrap;
+}
+.ac__th--check { width: 40px; padding: 13px 12px 13px 16px; }
+.ac__th--center { text-align: center; }
+
+.ac__tr {
+  border-bottom: 1px solid #f5f5f5;
+  transition: background 0.12s;
+}
+.ac__tr:last-child { border-bottom: none; }
+.ac__tr:hover { background: #fafafa; }
+
+.ac__td {
+  padding: 14px 16px;
+  font-size: 13.5px;
+  color: #222;
+  vertical-align: middle;
+}
+.ac__td--check { width: 40px; padding: 14px 12px 14px 16px; }
+.ac__td--center { text-align: center; }
+
+.ac__td--name {
+  font-weight: 500;
+  color: #111;
+}
+
+.ac__td--contact {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 13px;
+  color: #555;
+}
+
+/* ── Checkbox ───────────────────────────────────────────────────── */
+.ac__checkbox {
+  width: 15px;
+  height: 15px;
+  accent-color: #111;
+  cursor: pointer;
+}
+
+/* ── Status badges ──────────────────────────────────────────────── */
+.ac__badge {
+  display: inline-block;
+  padding: 3px 12px;
+  border-radius: 20px;
+  font-size: 12.5px;
+  font-weight: 500;
+}
+.ac__badge--confirmed {
+  background: #dcfce7;
+  color: #16a34a;
+}
+.ac__badge--disabled {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+/* ── View button ────────────────────────────────────────────────── */
+.ac__view-btn {
+  background: none;
+  border: none;
+  color: #2563eb;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: opacity 0.15s;
+}
+.ac__view-btn:hover { opacity: 0.7; }
+
+/* ── Footer / Pagination ────────────────────────────────────────── */
+.ac__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ac__showing {
+  font-size: 13px;
+  color: #888;
+}
+
+.ac__pagination {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.ac__page-btn {
+  min-width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 6px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  background: #fff;
+  font-size: 13px;
+  color: #444;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+.ac__page-btn:hover:not(:disabled):not(.ac__page-btn--active) {
+  background: #f5f5f5;
+}
+.ac__page-btn--active {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+  font-weight: 600;
+}
+.ac__page-btn--arrow {
+  font-size: 17px;
+  color: #666;
+}
+.ac__page-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.ac__page-ellipsis {
+  font-size: 14px;
+  color: #aaa;
+  padding: 0 4px;
+  line-height: 32px;
+}

@@ -1,0 +1,385 @@
+/* ================================================================
+   CustomerDetails.css  –  matches the screenshot design exactly
+   ================================================================ */
+
+.cd {
+  padding: 24px 32px 48px;
+  background: #f5f5f5;
+  min-height: 100%;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* ── Header ─────────────────────────────────────────────────────── */
+.cd__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.cd__back-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 700;
+  color: #111;
+  padding: 0;
+}
+.cd__back-btn:hover { opacity: 0.7; }
+
+.cd__header-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cd__header-date {
+  font-size: 12px;
+  color: #999;
+}
+
+/* ── Status Badge ───────────────────────────────────────────────── */
+.cd__status-badge {
+  display: inline-block;
+  padding: 3px 11px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* ── Sections ───────────────────────────────────────────────────── */
+.cd__section {
+  margin-bottom: 20px;
+}
+
+.cd__section-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.cd__section-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.cd__wishlist-count {
+  font-size: 13px;
+  color: #555;
+  font-weight: 500;
+}
+
+/* ── Cards ──────────────────────────────────────────────────────── */
+.cd__card {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  padding: 18px 20px;
+}
+
+.cd__card--no-pad {
+  padding: 0;
+  overflow: hidden;
+}
+
+.cd__card-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 14px;
+}
+
+/* ── Profile Grid ───────────────────────────────────────────────── */
+.cd__profile-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/* ── Info Rows ──────────────────────────────────────────────────── */
+.cd__info-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cd__info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+}
+
+.cd__info-label {
+  color: #888;
+  font-weight: 400;
+}
+
+.cd__info-value {
+  color: #111;
+  font-weight: 500;
+  text-align: right;
+}
+
+/* ── Address Grid ───────────────────────────────────────────────── */
+.cd__address-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.cd__address-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #888;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.cd__address-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 6px;
+}
+
+.cd__address-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 13px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* ── Order History ──────────────────────────────────────────────── */
+.cd__order-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  border-bottom: 1px solid #f5f5f5;
+}
+.cd__order-row:last-child { border-bottom: none; }
+
+.cd__product-img {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff3e0;
+  border: 1px solid #fde68a;
+}
+
+.cd__order-info {
+  flex: 1;
+}
+
+.cd__order-name {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 3px;
+}
+
+.cd__order-meta {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 2px;
+}
+
+.cd__order-date {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.cd__order-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.cd__order-amount {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111;
+}
+
+/* ── Wishlist ───────────────────────────────────────────────────── */
+.cd__wishlist-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.cd__wishlist-card {
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cd__wishlist-name {
+  font-size: 12.5px;
+  font-weight: 500;
+  color: #111;
+  line-height: 1.4;
+}
+
+.cd__wishlist-price {
+  font-size: 13px;
+  font-weight: 600;
+  color: #111;
+}
+
+/* ── Recent Activity ────────────────────────────────────────────── */
+.cd__activity-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid #f5f5f5;
+}
+.cd__activity-row:last-child { border-bottom: none; }
+
+.cd__activity-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.cd__activity-text {
+  font-size: 13px;
+  color: #444;
+}
+
+/* ── Account Controls ───────────────────────────────────────────── */
+.cd__controls-card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cd__controls-warning {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1;
+}
+
+.cd__warning-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ef4444;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.cd__warning-title {
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.cd__warning-sub {
+  font-size: 12.5px;
+  color: #888;
+}
+
+.cd__controls-btns {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+  align-items: center;
+}
+
+/* ── Buttons ────────────────────────────────────────────────────── */
+.cd__btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: opacity 0.15s;
+}
+.cd__btn:hover { opacity: 0.85; }
+
+.cd__btn--disable {
+  background: #fef9c3;
+  color: #854d0e;
+  border: 1px solid #fde047;
+}
+
+.cd__btn--delete {
+  background: #ef4444;
+  color: #fff;
+}
+
+.cd__btn--cancel {
+  background: #f5f5f5;
+  color: #444;
+  border: 1px solid #e0e0e0;
+}
+
+/* ── Modal ──────────────────────────────────────────────────────── */
+.cd__modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.cd__modal {
+  background: #fff;
+  border-radius: 14px;
+  padding: 28px;
+  width: 380px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.cd__modal-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.cd__modal-body {
+  font-size: 13.5px;
+  color: #666;
+  margin-bottom: 22px;
+  line-height: 1.5;
+}
+
+.cd__modal-btns {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
