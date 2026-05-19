@@ -15,10 +15,10 @@ import AddProduct from "./addproduct.jsx";
 import ProductList from "./productlist.jsx";
 import AddCategory from "./addcategory.jsx";
 import CategoryList from "./categorylist.jsx";
-import AllOrders from "./AllOrders.jsx";
-import OrderDetails from "./OrderDetails.jsx";
-import AllCustomers from "./AllCustomers.jsx";
-import CustomerDetails from "./CustomerDetails.jsx";
+import AllOrders from "./Allorders.jsx";
+import OrderDetails from "./Orderdetails.jsx";
+import AllCustomers from "./Allcustomers.jsx";
+import CustomerDetails from "./Customerdetails.jsx";
 import AddBanner from "./Addbanner.jsx";
 import BannerList from "./Bannerlist.jsx";
 
