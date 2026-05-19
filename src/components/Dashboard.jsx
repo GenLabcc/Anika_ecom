@@ -11,16 +11,16 @@ import bannerIcon from "../assets/banner.png";
 import analyticsIcon from "../assets/analytics.png";
 import settingsIcon from "../assets/settings.png";
 import searchIcon from "../assets/search.png";
-import AddProduct from "./addproduct";
-import ProductList from "./productlist";
-import AddCategory from "./addcategory";
-import CategoryList from "./categorylist";
-import AllOrders from "./AllOrders";
-import OrderDetails from "./OrderDetails";
-import AllCustomers from "./AllCustomers";
-import CustomerDetails from "./CustomerDetails";
-import AddBanner from "./Addbanner";
-import BannerList from "./BannerList";
+import AddProduct from "./addproduct.jsx";
+import ProductList from "./productlist.jsx";
+import AddCategory from "./addcategory.jsx";
+import CategoryList from "./categorylist.jsx";
+import AllOrders from "./AllOrders.jsx";
+import OrderDetails from "./OrderDetails.jsx";
+import AllCustomers from "./AllCustomers.jsx";
+import CustomerDetails from "./CustomerDetails.jsx";
+import AddBanner from "./Addbanner.jsx";
+import BannerList from "./Bannerlist.jsx";
 
 const StatIcon = ({ type }) => {
   const icons = {
