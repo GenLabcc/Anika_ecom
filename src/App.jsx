@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./App.css";
-import Dashboard from "./components/Dashboard";
-import ProductList from "./components/ProductList";
-import AddProduct from "./components/AddProduct";
-import CategoryList from "./components/CategoryList";
-import AddCategory from "./components/AddCategory";
+import Dashboard from "./components/Dashboard.jsx";
+import ProductList from "./components/ProductList.jsx";
+import AddProduct from "./components/AddProduct.jsx";
+import CategoryList from "./components/CategoryList.jsx";
+import AddCategory from "./components/AddCategory.jsx";
 
 export default function App() {
   const [view, setView] = useState("dashboard");
