@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
-import Dashboard from "./components/Dashboard";
+import Dashboard from "../components/Dashboard";
 import ProductList from "./components/ProductList";
 import AddProduct from "./components/AddProduct";
 import CategoryList from "./components/CategoryList";
