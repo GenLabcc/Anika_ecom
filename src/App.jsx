@@ -5,13 +5,11 @@ import ProductList from "./components/ProductList";
 import AddProduct from "./components/AddProduct";
 import CategoryList from "./components/CategoryList";
 import AddCategory from "./components/AddCategory";
-import EditCategory from "./components/EditCategory";
 
 export default function App() {
   const [view, setView] = useState("dashboard");
   const [products, setProducts] = useState([]);
   const [categories, setCategories] = useState([]);
-  const [editingCategory, setEditingCategory] = useState(null);
 
   // ── Product handlers ──────────────────────────────────────
   const handlePublish = (newProduct) => {
@@ -26,20 +24,8 @@ export default function App() {
 
   // ── Category handlers ─────────────────────────────────────
   const handleCategoryPublish = (data) => {
-    if (editingCategory) {
-      setCategories((prev) =>
-        prev.map((c) => (c.id === editingCategory.id ? { ...c, ...data } : c))
-      );
-    } else {
-      setCategories((prev) => [data, ...prev]);
-    }
-    setEditingCategory(null);
+    setCategories((prev) => [data, ...prev]);
     setView("categoryList");
-  };
-
-  const handleEditCategory = (cat) => {
-    setEditingCategory(cat);
-    setView("editCategory");
   };
 
   const handleDeleteCategory = (id) => {
@@ -78,20 +64,12 @@ export default function App() {
           categories={categories}
           setCategories={setCategories}
           onAddCategory={() => setView("addCategory")}
-          onEditCategory={handleEditCategory}
           onDeleteCategory={handleDeleteCategory}
         />
       )}
       {view === "addCategory" && (
         <AddCategory
           onBack={() => setView("categoryList")}
-          onPublish={handleCategoryPublish}
-        />
-      )}
-      {view === "editCategory" && (
-        <EditCategory
-          initialData={editingCategory}
-          onBack={() => { setEditingCategory(null); setView("categoryList"); }}
           onPublish={handleCategoryPublish}
         />
       )}
