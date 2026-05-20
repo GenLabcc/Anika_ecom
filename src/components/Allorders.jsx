@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./AllOrders.css";
+import "./Allorders.css";
 
 const ALL_ORDERS = [
   { id: "#AJW-1042", customer: "Ranganath",      items: 87, total: "₹5,000", payment: "Paid", status: "Pending",   type: "Regular" },

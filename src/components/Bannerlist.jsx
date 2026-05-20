@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "./BannerList.css";
-import BannerEdit from "./BannerEdit";
+import "./Bannerlist.css";
+import BannerEdit from "./Banneredit.jsx";
 import blankIcon from "../assets/blank.svg";
 
 const PlusIcon = () => (

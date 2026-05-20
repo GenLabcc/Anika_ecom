@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./AllCustomers.css";
+import "./Allcustomers.css";
 
 const mockCustomers = [
   { id: 1,  name: "Ranganath", email: "priya.s@gmail.com", phone: "+91 98400 11111", orders: 87, totalSpent: 5000, joined: "12th May,2026", status: "Confirmed" },

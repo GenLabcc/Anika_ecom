@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import "./BannerEdit.css";
+import "./Banneredit.css";
 
 const BannerEdit = ({ banner, onBack, onSave, onDelete }) => {
   const [form, setForm] = useState({

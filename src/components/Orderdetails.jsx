@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./OrderDetails.css";
+import "./Orderdetails.css";
 
 const STATUS_CONFIG = {
   Delivered: { bg: "#dcfce7", color: "#16a34a", dot: "#22c55e" },
