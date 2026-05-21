@@ -207,7 +207,8 @@
   background: #fff;
   border: 1px solid #ebebeb;
   border-radius: 12px;
-  overflow: hidden;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   box-shadow: 0 1px 4px rgba(0,0,0,0.04);
 }
 
@@ -246,6 +247,7 @@
   font-size: 13.5px;
   color: #333;
   vertical-align: middle;
+  white-space: nowrap;
 }
 
 .ao__td-check { width: 40px; }
@@ -363,4 +365,105 @@
   justify-content: center;
   font-size: 13px;
   color: #aaa;
+}
+
+/* ═════════════════════════════════════════════════════════════════════════════
+   RESPONSIVE BREAKPOINTS FOR ALL ORDERS PAGE
+   ═════════════════════════════════════════════════════════════════════════════ */
+
+/* ── Laptop / Small Screens (≤1024px) ──────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .ao {
+    padding: 20px 24px;
+  }
+  .ao__stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+}
+
+/* ── Tablets Portrait (≤768px) ────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .ao {
+    padding: 16px;
+  }
+  .ao__page-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  .ao__header-tabs {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+    width: 100%;
+  }
+  .ao__tab + .ao__tab {
+    margin-left: 20px;
+  }
+  .ao__stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 8px;
+  }
+  .ao__stat {
+    padding: 12px 14px;
+  }
+  .ao__stat-value {
+    font-size: 19px;
+  }
+}
+
+/* ── Mobile Devices (≤640px) ──────────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .ao__toolbar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    width: 100%;
+  }
+  .ao__search {
+    grid-column: span 2;
+    width: 100%;
+    min-width: 0;
+  }
+  .ao__dd {
+    width: 100%;
+  }
+  .ao__dd-btn {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .ao__filter-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ── Small Phones (≤480px) ────────────────────────────────────────────────── */
+@media (max-width: 480px) {
+  .ao {
+    padding: 12px;
+  }
+  .ao__title {
+    font-size: 20px;
+  }
+  .ao__stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  .ao__stat {
+    padding: 10px 12px;
+  }
+  .ao__stat-value {
+    font-size: 17px;
+  }
+  .ao__stat-label {
+    font-size: 11px;
+  }
+  .ao__footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
 }

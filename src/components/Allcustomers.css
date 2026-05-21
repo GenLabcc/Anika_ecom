@@ -152,7 +152,8 @@
   background: #fff;
   border-radius: 12px;
   border: 1px solid #eee;
-  overflow: hidden;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   margin-bottom: 16px;
 }
 
@@ -186,6 +187,7 @@
   font-size: 13.5px;
   color: #222;
   vertical-align: middle;
+  white-space: nowrap;
 }
 .ac__td--check { width: 40px; padding: 14px 12px 14px 16px; }
 .ac__td--center { text-align: center; }
@@ -298,4 +300,86 @@
   color: #aaa;
   padding: 0 4px;
   line-height: 32px;
+}
+
+/* ═════════════════════════════════════════════════════════════════════════════
+   RESPONSIVE BREAKPOINTS FOR ALL CUSTOMERS PAGE
+   ═════════════════════════════════════════════════════════════════════════════ */
+
+/* ── Laptop / Small Screens (≤1024px) ──────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .ac {
+    padding: 20px 24px;
+  }
+  .ac__stats-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+}
+
+/* ── Tablets Portrait (≤768px) ────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .ac {
+    padding: 16px;
+  }
+  .ac__header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  .ac__stats-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .ac__stat-card {
+    padding: 14px 16px;
+  }
+  .ac__stat-value {
+    font-size: 22px;
+  }
+  .ac__toolbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  .ac__filters {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  .ac__select-wrapper, .ac__select {
+    width: 100%;
+  }
+  .ac__search-wrapper {
+    width: 100%;
+  }
+}
+
+/* ── Small Phones (≤480px) ────────────────────────────────────────────────── */
+@media (max-width: 480px) {
+  .ac {
+    padding: 12px;
+  }
+  .ac__title {
+    font-size: 18px;
+  }
+  .ac__stats-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .ac__stat-card {
+    padding: 12px 14px;
+  }
+  .ac__stat-value {
+    font-size: 20px;
+  }
+  .ac__filters {
+    grid-template-columns: 1fr;
+  }
+  .ac__footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
 }

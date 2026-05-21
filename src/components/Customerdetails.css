@@ -361,6 +361,7 @@
   border-radius: 14px;
   padding: 28px;
   width: 380px;
+  max-width: 90vw;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
 }
 
@@ -382,4 +383,93 @@
   display: flex;
   justify-content: flex-end;
   gap: 10px;
+}
+
+/* ═════════════════════════════════════════════════════════════════════════════
+   RESPONSIVE BREAKPOINTS FOR CUSTOMER DETAILS PAGE
+   ═════════════════════════════════════════════════════════════════════════════ */
+
+/* ── Laptop / Small Screens (≤1024px) ──────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .cd {
+    padding: 20px 24px 36px;
+  }
+}
+
+/* ── Tablets Portrait (≤768px) ────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .cd {
+    padding: 16px;
+  }
+  .cd__profile-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .cd__address-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .cd__wishlist-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .cd__controls-card {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+  .cd__controls-btns {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .cd__btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+/* ── Mobile Devices (≤600px) ──────────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .cd__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+/* ── Small Phones (≤480px) ────────────────────────────────────────────────── */
+@media (max-width: 480px) {
+  .cd {
+    padding: 12px;
+  }
+  .cd__back-btn {
+    font-size: 15px;
+  }
+  .cd__info-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+  .cd__info-value {
+    text-align: left;
+    max-width: 100%;
+    word-break: break-word;
+  }
+  .cd__wishlist-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .cd__order-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  .cd__order-right {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px dashed #f0f0f0;
+    padding-top: 8px;
+  }
 }
